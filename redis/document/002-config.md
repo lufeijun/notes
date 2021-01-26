@@ -289,9 +289,9 @@ aof 为混合式，前半部分是 rdb 形式的文件，后边是 aof 的，这
 ### repl-diskless-load disabled
 从库重放模式
 
-* disabled
-* on-empty-db
-* swapdb
+* disabled： 使用 rdb 文件模式
+* on-empty-db：当足够安全时，使用 socket 的
+* swapdb：使用 swap 内存
 
 
 ### repl-ping-replica-period 10
